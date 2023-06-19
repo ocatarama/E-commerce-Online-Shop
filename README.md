@@ -1,6 +1,6 @@
 # E-commerce-Online-Shop
 
-Node.js project intended for learning Node.js with Express and EJS, web cookies and sessions, connection to databases and others.
+I created this Node.js project to learn Node.js with Express and EJS, web cookies and sessions, connection to databases and others.
 
 This project uses the Node.js library for SQLite.
 
