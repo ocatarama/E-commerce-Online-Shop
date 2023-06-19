@@ -1,0 +1,52 @@
+<% if( username == undefined){ %>
+    <div class="index-header">
+        <h1>Bun venit la magazinul de componente!</h1>
+        <a href="/autentificare">Autentifica-te!</a>
+    </div>
+<% } else { %>
+    <% if( tableLength == 0) { %>
+        <div class="profile-container">
+            <header class="index-header">
+                <h1> Bine ai venit, <%= username %>!</h1>
+                <a href="/delogare" style="margin-bottom: 20px;">Delogare</a>
+
+                <div class="button-group">
+                    <a href="/creare-bd">Creare BD</a>
+                    <a href="/inserare-bd">Inserare BD</a>
+                </div>
+            </header>
+        </div>
+    <% } else {%>
+        <div class="main-container">
+            <nav class="navbar">
+                <h1>Bine ai venit, <%= username %></h1>
+
+                <div class="button-group">
+                    <a href="/chestionar" style="margin-right: 20px;">Chestionar</a>
+                    <a href="/vizualizare-cos" style="margin-right: 20px;">Cos de cumparaturi</a>
+                    <a href="/Delogare">Delogare</a>
+                </div>
+            </nav>
+            <main>
+                <div class="container">
+                    <h2>Lista de produse:</h2>
+
+                    <div class="product-group">
+                        <% for(var i = 0; i < tableLength; i++) {%>
+                            <div class="product-card">
+                                <h4><%= table[i].product_name %></h4>
+                                <span class="product-manufacturer"> <%= table[i].manufacturer %></span>
+                                <span class="product-code"> Code: <%= table[i].product_code %></span>
+
+                                <div class="card-prices">
+                                    <span class="product-price">Price: <strong> <%= table[i].price %></strong></span>
+                                    <a href="/adaugare-cos?id=<%= table[i].product_id %>">Add to cart</a>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </main>
+        </div>
+    <% } %>
+<% } %>

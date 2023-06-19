@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-egg-white: #F2E3DB;
+    --color-pale-green: #41644A;
+    --color-forest-green: #263A29;
+    --color-orange: #E86A33;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-egg-white);
+}
+
+.form-title {
+    color: var(--color-forest-green);
+    text-align: center;
+}
+
+.form-container {
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-submit {
+    border: 2px solid var(--color-forest-green);
+    border-radius: 20px;
+    padding: 8px 16px;
+
+    background: var(--color-forest-green);
+    align-self: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+
+    color: var(--color-orange);
+    font-weight: 600;
+    box-shadow: 3px 2px 10px grey;
+}
+
+.form-submit:hover {
+    background-color: transparent;
+}
+
+/* ======================================= INDEX.EJS ======================================= */
+.index-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 30%;
+    margin: 0 auto;
+    height: 100vh;
+
+    transform:translateY(-40px);
+}
+
+.index-header h1{
+    text-align:center;
+    color: var(--color-forest-green);
+}
+
+.index-header a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-orange);
+    font-weight: 600;   
+    border: 3px solid var(--color-forest-green);
+    padding: 8px 16px;
+    border-radius: 50px;   
+    transition: .5s;
+    box-shadow: 3px 2px 10px grey;
+}
+
+.index-header a:hover {
+    background-color: var(--color-forest-green);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    /**/
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: .7px solid grey;
+    box-shadow: 0 0 10px grey;
+    padding: 0 20px;
+    background-color: var(--color-pale-green);
+
+    color: var(--color-orange);
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-orange);
+    font-weight: 600;   
+    border: 3px solid var(--color-forest-green);
+    padding: 8px 16px;
+    border-radius: 50px;   
+    transition: .5s;
+    background-color: var(--color-forest-green);
+}
+
+.navbar a:hover {
+    background-color: var(--color-egg-white);
+    border: 3px solid var(--color-egg-white);
+    color: var(--color-pale-green);
+}
+
+.main-container .container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-container h2{
+    margin-left: 30px;
+}
+
+.product-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: var(--color-pale-green);
+    color: whitesmoke;
+
+    border: 1px solid grey;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 20px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card h4 {
+    margin: 0;
+}
+
+.product-code {
+    font-size: 12px;
+}
+
+.card-prices {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-prices a {
+    text-decoration: none;
+    padding: 8px;
+    background-color: var(--color-orange);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    
+}
+
+.card-prices a:active {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+
+/* ======================================= CHESTIONAR.EJS ======================================= */
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    border: 3px solid var(--color-pale-green);
+    border-radius: 30px;
+
+    padding: 20px 50px;
+}
+
+.quiz>label {
+    transition: .3s;
+    width: 100%;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+.quiz>label:hover {
+    background-color: var(--color-pale-green);
+    color: var(--color-egg-white)
+}
+
+.quiz>div {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+/* ======================================= AUTENTIFICARE.EJS ======================================= */
+
+.authentication-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 60px;
+
+    background-color: whitesmoke;
+    border-radius: 18px;
+    box-shadow: 5px 5px 10px lightgrey;
+    transform:translateY(-40px);
+}
+
+.authentication-form>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.authentication-form input {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    transition: 1s;
+}
+
+.authentication-form input + span {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--color-orange);
+    transition: width 250ms ease-in-out;
+}
+
+.authentication-form input:focus + span {
+    width: 100%;
+}
+
+.authentication-form input:focus + .authentication-form span::after {
+    width: 100%;
+}
+
+.authentication-form input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+

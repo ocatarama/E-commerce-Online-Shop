@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <h1>Bine ai venit, <%= username %></h1>
+
+    <div class="button-group">
+        <a href="/">Inapoi la pagina principala</a>
+    </div>
+</nav>
+<div class="container" style="margin: 0 auto; width: 70%;">
+    <form action="/add-product" method="post">
+        <div>
+            <label for="product_name">Numele produsului nou:</label>
+            <input type="text" name="product_name" id="product_name" required>
+        </div>
+        <div>
+            <label for="quantity">Cantitate:</label>
+            <input type="text" name="quantity" id="quantity" required>
+        </div>
+        <div>
+            <label for="price">Pret:</label>
+            <input type="number" name="price" id="price" step=".01" required>
+        </div>
+        <div>
+            <label for="manufacturer">Producator:</label>
+            <input type="text" name="manufacturer" id="manufacturer" required>
+        </div>
+        <div>
+            <label for="product_code">Cod produs:</label>
+            <input type="text" name="product_code" id="product_code" required>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

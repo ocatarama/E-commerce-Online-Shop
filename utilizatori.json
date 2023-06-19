@@ -1,0 +1,5 @@
+[
+    {"username": "admin", "password": "admin", "varsta": null, "admin": true},
+    {"username": "Ovidiu", "password": "amparola123", "varsta": "22", "admin": false},
+    {"username": "test", "password": "test2", "varsta": "23", "admin": false}   
+]

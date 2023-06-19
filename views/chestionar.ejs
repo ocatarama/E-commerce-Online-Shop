@@ -1,0 +1,18 @@
+<h1 class="form-title"> Chestionar </h1>
+<div class="form-container">
+    <form class="quiz" action="/rezultat-chestionar" method="POST">
+        <% for (var i = 0; i < intrebari.length; i++) {%>
+                <label><%= intrebari[i].intrebare %></label>
+                <div>
+                    <% for(var j = 0; j < intrebari[i].variante.length; j++) {%>
+                        <div>
+                            <input type="radio" id="intrebare<%= i %>-<%= j %>" name="intrebare<%= i %>" value="<%= j %>">
+                            <label for="intrebare<%= i %>-<%= j %>"> <%= intrebari[i].variante[j] %> </label>
+                        </div>
+                    <% } %>
+                </div>
+        <% } %>
+
+        <button class="form-submit" type="submit">Submit</button>
+    </form>
+</div>

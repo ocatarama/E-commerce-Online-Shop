@@ -1,0 +1,27 @@
+[
+    { 
+        "intrebare": "Cine este ASUS?",
+        "variante": ["ASUS este o companie de marketing", "ASUS este o companie multinațională de produse tehnologice din Taiwan la nivel mondial.", "ASUS vinde shaorma la Class", "ASUS este o companie multinaţionala de produse casnice din Romania la nivel mondial"],
+        "corect": "1"
+    },
+    { 
+        "intrebare": "Ce este o placă de bază?",
+        "variante": ["O placă de bază este componenta principală a unui calculator sau a unui sistem informatic. ", "Este o platforma care se pune la baza unei case", "Este o placă de skateboard", "Este o placa"],
+        "corect": "0"
+    },
+    { 
+        "intrebare": "Ce componente este responsabilă pentru procesarea datelor într-un computer?",
+        "variante": ["Placa de bază", "Memoria RAM", "Procesorul", "Unitatea de stocare"],
+        "corect": "2"
+    },
+    { 
+        "intrebare": "Ce componente stochează permanent datele pe termen lung într-un calculator?",
+        "variante": ["Placa de bază", "Procesorul", "Memoria RAM", "Unitatea de stocare"],
+        "corect": "3"
+    },
+    {
+        "intrebare": "Ce componentă de hardware permite calculatorului să se conecteze la o rețea de ",
+        "variante": [" Placa de bază", "Procesorul", " Placa de rețea (NIC)", "Unitatea de stocare"],
+        "corect": "2"
+    }
+]

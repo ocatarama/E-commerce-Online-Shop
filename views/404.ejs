@@ -1,0 +1,16 @@
+<h2>Ai incercat să accesezi un fişier care nu exista! --- <%= url %></h2>
+
+<a href="/">Mergi la pagina principala</a>
+
+<script>
+    function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function demo() {
+        await sleep(5000);
+        console.log('Done');
+    }
+
+    demo();
+</script>

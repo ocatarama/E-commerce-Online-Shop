@@ -1,0 +1,19 @@
+<div class="form-container">
+    <form class="authentication-form" action="/verificare-autentificare" method="POST">
+        <h1 class="form-title"> Autentificare </h1>
+        <div>
+            <label for=""></label>
+            <input type="text" name="username" id="username" placeholder="Username"><span></span>
+        </div>
+        <div>
+            <label for=""></label>
+            <input type="password" name="password" id="password" placeholder="Parola"><span></span>
+        </div>
+
+        <% if(mesajEroare != undefined) {%>
+            <label style="color: red; padding: 10px 0;"> <%= mesajEroare %></label>
+        <% } %>
+
+        <button type="submit" class="form-submit">Login</button>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+<% if(listaProduse != undefined) {%>
+    <nav class="navbar">
+        <h1>Bine ai venit, <%= username %></h1>
+
+        <div class="button-group">
+            <a href="/">Inapoi la pagina principala</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container" style="width: 70%; margin: 0 auto;">
+            <h2>Lista de produse:</h2>
+
+            <div class="product-group">
+                <% for(var i = 0; i < listaProduse.length; i++) {%>
+                    <div class="product-card">
+                        <h4><%= listaProduse[i].product_name %></h4>
+                        <span class="product-manufacturer"> <%= listaProduse[i].manufacturer %></span>
+                        <span class="product-code"> Code: <%= listaProduse[i].product_code %></span>
+
+                        <div class="card-prices">
+                            <span class="product-price">Price: <strong> <%= listaProduse[i].price %></strong></span>
+                            <a href="/scoatere-cos?id=<%= listaProduse[i].product_id %>" >Sterge</a>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </main>
+<% } else { %>
+    <h3>Cosul tau este gol! Mergi inapoi la <a href="/">pagina principala</a></h3>
+<% } %>
